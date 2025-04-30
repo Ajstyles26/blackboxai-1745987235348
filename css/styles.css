@@ -1,0 +1,84 @@
+/* Custom styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --gray-100: #F6F6F6;
+    --gray-200: #EAEAEA;
+    --gray-600: #6B6B6B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom button hover effects */
+.hover-lift {
+    transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom input focus styles */
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom transitions */
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+/* Header styles */
+.header-shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styles */
+.hero-input {
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-200);
+}
+
+/* Custom button styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #333333;
+}
+
+/* Footer styles */
+.footer-link {
+    color: var(--secondary-color);
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 1;
+}
